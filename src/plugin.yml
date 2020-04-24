@@ -1,0 +1,28 @@
+name: PerPlayerDungeonInstance
+authors: [shadow_wind]
+main: com.ohthedungeon.storydungeon.PerPlayerDungeonInstance
+depend: [Oh_the_dungeons_youll_go]
+softdepend: [Vault]
+load: postworld
+api-version: 1.15
+version: 1.0
+commands:
+  otd_pi:
+    description: Open the PerPlayerDungeonInstance Menu
+    usage: /<command>
+  otd_pi_back:
+    description: Back to normal world
+    usage: /<command>
+  otd_pi_debug:
+    description: Show debug info
+    usage: /<command>
+permissions:
+  perplayerdungeoninstance.admin:
+    default: op
+    description: Using all PerPlayerDungeonInstance management command
+  perplayerdungeoninstance.back:
+    default: true
+    description: Permission for otd_pi_back
+  perplayerdungeoninstance.menu:
+    default: true
+    description: Permission for otd_pi
